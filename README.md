@@ -1,8 +1,7 @@
-# Ejemplo de uso Xamarin Forms - Visual Studio
+# Ejemplo de uso de XAML en Xamarin Forms - Visual Studio
 
 
-Ejemplo básico para familiarizarse con Xamarin Forms, en el mismo podremos ver como usar los componentes principales de Xamarin para realizar
-interfaces de usuario.
+Ejemplo básico para familiarizarse con XAML en Xamarin Forms, en el mismo podremos ver como usar los componentes principales de Xamarin para realizar interfaces de usuario.
 
 - Pages
 - Layouts
