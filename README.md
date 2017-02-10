@@ -9,8 +9,7 @@ interfaces de usuario.
 - Views
 - Cells
 
-Adicional a ello se muestra como utilizar SQLite para el manejo de bases de datos locales y se divide la interacción con la base de datos
-por capas
+Adicional a ello se muestra como utilizar SQLite para el manejo de bases de datos locales y se divide la interacción con la misma por medio de capas
 
 - BE
 - BLL
