@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:MasterDetailPageNavigation;assembly=MasterDetailPageNavigation"
+                  x:Class="EjemploXamarinForms.Pages.EjemploMasterDetailsPage"
+                  Title="Ejemplo de Master Detail Page"
+                  >
+  <MasterDetailPage.Master>
+    <ContentPage Title="Titulo" Icon="Hamburguer.png">
+      <StackLayout VerticalOptions="FillAndExpand">
+        <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+      <!--<Label Text="Master 1"/>
+      <Label Text="Master 2"/>
+      <Label Text="Master 3"/>
+      <Label Text="Master 4"/>-->
+    </ContentPage>
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <ContentPage>
+      <Label Text="Arrastra la parte izquierda"/>
+    </ContentPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>

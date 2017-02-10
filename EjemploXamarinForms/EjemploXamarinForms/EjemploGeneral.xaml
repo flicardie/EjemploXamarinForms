@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploXamarinForms.EjemploGeneral"
+             
+             Title="Ejemplo General"
+             >
+  
+  <StackLayout>
+    <TableView x:Name="listadoComponentes" Intent="Menu">
+      <TableRoot Title="Data Form">
+        <TableSection Title="Listado de Páginas(Pages)">
+          <TextCell
+            Text="ContentPage"
+            Command="{Binding IraCommando}"
+            CommandParameter="EjemploContentPage"
+          />
+          <TextCell
+           Text="MasterDetailPage"
+           Command="{Binding IraCommando}"
+           CommandParameter="EjemploMasterDetailsPage"
+          />
+          <TextCell
+          Text="TabbedPage"
+          Command="{Binding IraCommando}"
+          CommandParameter="EjemploTabbedsPage"
+          />
+          <TextCell
+         Text="CarouselPage"
+         Command="{Binding IraCommando}"
+         CommandParameter="EjemploCarouselsPage"
+          />
+        </TableSection>
+        <TableSection Title="Listado de Componentes(Views)">
+          <TextCell
+            Text="Activity Indicator"
+            Command="{Binding IraCommando}"
+            CommandParameter="ActivityIndicator" 
+          />
+          <TextCell
+            Text="BoxView"
+            x:Name="BoxView"
+            Command="{Binding IraCommando}"
+            CommandParameter="BoxView"
+          />
+          <TextCell 
+            Text="Botón"
+            x:Name="Boton"
+            Command="{Binding IraCommando}"
+            CommandParameter="Boton"
+           />
+          <TextCell
+            Text="DatePicker"
+            x:Name="DatePicker"
+            Command="{Binding IraCommando}"
+            CommandParameter="DatePicker"
+           />
+          <TextCell
+            Text="Editor"
+            x:Name="Editor"
+            Command="{Binding IraCommando}"
+            CommandParameter="Editor"
+           />
+          <TextCell
+            Text="Entry"
+            x:Name="Entry"
+            Command="{Binding IraCommando}"
+            CommandParameter="Entry"
+           />
+          <TextCell
+            Text="Image"
+            x:Name="Image"
+            Command="{Binding IraCommando}"
+            CommandParameter="Image"
+           />
+          <TextCell
+            Text="Label"
+            x:Name="Label"
+            Command="{Binding IraCommando}"
+            CommandParameter="Label"
+           />
+          <TextCell
+           Text="ListView"
+           x:Name="ListView"
+           Command="{Binding IraCommando}"
+           CommandParameter="ListView"
+           />
+          
+          <TextCell
+           Text="Picker"
+           x:Name="Picker"
+           Command="{Binding IraCommando}"
+           CommandParameter="PickerEjemplo"
+           />
+          <TextCell
+           Text="ProgressBar"
+           x:Name="ProgressBar"
+           Command="{Binding IraCommando}"
+           CommandParameter="ProgressBar"
+           />
+          <TextCell
+           Text="SearchBar"
+           x:Name="SearchBar"
+           Command="{Binding IraCommando}"
+           CommandParameter="SearchBar"
+           />
+          <TextCell
+           Text="Slider"
+           x:Name="Slider"
+           Command="{Binding IraCommando}"
+           CommandParameter="Slider"
+           />
+          <TextCell
+           Text="Stepper"
+           x:Name="Stepper"
+           Command="{Binding IraCommando}"
+           CommandParameter="Stepper"
+           />
+          <TextCell
+           Text="Switch"
+           x:Name="Switch"
+           Command="{Binding IraCommando}"
+           CommandParameter="Switch"
+           />
+          <TextCell
+           Text="TimePicker"
+           x:Name="TimePicker"
+           Command="{Binding IraCommando}"
+           CommandParameter="TimePicker"
+           />
+          <TextCell
+           Text="WebView"
+           x:Name="WebView"
+           Command="{Binding IraCommando}"
+           CommandParameter="WebView"
+           />
+          
+
+        </TableSection>
+      </TableRoot>
+    </TableView>
+
+
+  </StackLayout>
+
+</ContentPage>

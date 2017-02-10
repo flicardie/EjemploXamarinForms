@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploXamarinForms.Views.Stepper"
+             Title="Stepper View"
+             >
+  <StackLayout>
+    <Label  Text="Ejemplo Stepper" FontSize="Medium" HorizontalOptions="Center" />
+    <Stepper x:Name="stepper" Minimum="0" Increment="1"  HorizontalOptions="Center" ValueChanged="OnStepperValueChanged" />
+  </StackLayout>
+</ContentPage>

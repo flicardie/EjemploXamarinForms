@@ -12,12 +12,12 @@ namespace EjemploXamarinForms
     {
 
         public HomePageViewModel(Type pageType,
-                                   Action<Type> gotoExecute,
+                                   Action<Type> accionAEjecutar,
                                    Action<String> browseExecute)
         {
             this.PageType = pageType;
             this.PageName = pageType.Name;
-            this.GoToCommand = new Command<Type>(gotoExecute);
+            this.GoToCommand = new Command<Type>(accionAEjecutar);
             this.BrowseCommand = new Command<String>(browseExecute);
         }
 
