@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploXamarinForms.EjemploAlertas">
+  <StackLayout>
+    <Label Text="Ejemplo de Alertas" VerticalOptions="Center" HorizontalOptions="Center" />
+
+    <Button x:Name ="btnMostrarAlertaNormal" Clicked="AlertaNormal" Text="Alerta Normal" HorizontalOptions="Center"></Button>
+    <Button x:Name ="btnMostrarAlertaActionSheet" Clicked="ActionSheet" Text="Alerta Action Sheet" HorizontalOptions="Center"></Button>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EjemploXamarinForms"
+             x:Class="EjemploXamarinForms.MainPage">
+
+   <ListView x:Name="listView">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout Orientation="Horizontal"
+                       Padding="5, 0">
+            <Label Text="{Binding PageName}"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="Center" />
+
+            <Button Text="Ver"
+                    Command="{Binding GoToCommand}"
+                    CommandParameter="{Binding PageType}" />
+
+            <Button Text="Codigo Fuente"
+                    Command="{Binding BrowseCommand}"
+                    CommandParameter="{Binding PageName}" />
+
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+
+</ContentPage>

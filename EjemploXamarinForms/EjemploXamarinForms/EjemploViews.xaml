@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploXamarinForms.EjemploViews"
+             
+             >
+  <ScrollView>
+    <StackLayout >
+      <Label x:Name="etiqueta" Text="Ejemplo de ActivityIndicator" FontSize="Medium" HorizontalOptions="Center" />
+      <ActivityIndicator x:Name="activityIndicator" IsVisible="True" IsRunning="True" Color="Black" />
+      <Label Text="Ejemplo de BoxView" FontSize="Medium" HorizontalOptions="Center"  />
+      <BoxView x:Name="boxView" Color="Red" />
+      <Label Text="Ejemplo de Botón" FontSize="Medium" HorizontalOptions="Center"   />
+      <Button  Clicked="buttonOnClick" x:Name="btnEjemplo" Text="Ejemplo de Botón" HorizontalOptions="Center"  />
+      <Label Text="Ejemplo de DatePicker" FontSize="Medium" HorizontalOptions="Center"   />
+      <DatePicker x:Name="dtPicker" Format="yyyy-MM-dd" HorizontalOptions="Center" DateSelected="datePickerOnDateSelected"  />
+      <Label  Text="Ejemplo de Editor" FontSize="Medium" HorizontalOptions="Center"  />
+      <Editor x:Name="memo" Text="Hola soy un editor, puedo recibir varias lineas de texto" />
+      <Label  Text="Ejemplo de Entry" FontSize="Medium" HorizontalOptions="Center"  />
+      <Entry x:Name="cajaDeTexto" Placeholder="Ingresa un texto" Completed="entryOnCompleted"/>
+      <Label  Text="Ejemplo de Imagen" FontSize="Medium" HorizontalOptions="Center"  />
+      <Image x:Name="imagen" Source="icon.jpg" />
+      <Label  Text="Ejemplo de ListView (Dinámico)" FontSize="Medium" HorizontalOptions="Center"  />
+      <StackLayout> 
+        
+        <ListView  x:Name="listView" HorizontalOptions="Center" SeparatorVisibility="Default" HasUnevenRows="False" >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <StackLayout VerticalOptions="FillAndExpand">
+                  <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label  Text="{Binding Title}" />
+                    
+                  </StackLayout>
+                  
+                </StackLayout>
+              </ViewCell>
+             
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+      <Label Text="Ejemplo de Pickers" FontSize="Medium" HorizontalOptions="Center"  />
+      <Picker x:Name="picker" Title="Seleccione un mono" HorizontalOptions="Center" SelectedIndexChanged="OnPickerSelectedIndexChanged">
+        <Picker.Items>
+          <x:String>Baboon</x:String>
+          <x:String>Capuchin Monkey</x:String>
+          <x:String>Blue Monkey</x:String>
+          <x:String>Squirrel Monkey</x:String>
+          <x:String>Golden Lion Tamarin</x:String>
+          <x:String>Howler Monkey</x:String>
+          <x:String>Japanese Macaque</x:String>
+        </Picker.Items>
+      </Picker>
+      <Label Text="Ejemplo de Progress Bars" FontSize="Medium" HorizontalOptions="Center"  />
+      <ProgressBar x:Name="progressBar" Progress="0.5"/>
+      <Label Text="Ejemplo Search Bar" FontSize="Medium" HorizontalOptions="Center"  />
+      <SearchBar x:Name="search" Placeholder="Buscar" TextChanged="searchTextChanged" SearchButtonPressed="searchButtonPressed" />
+      <Label  Text="Ejemplo Slider" FontSize="Medium" HorizontalOptions="Center" />
+      <Slider x:Name="DesSlider" Minimum="0" Maximum="5" Value="0" VerticalOptions="CenterAndExpand" ValueChanged="OnSliderValueChanged"/>
+      <Label  Text="Ejemplo Stepper" FontSize="Medium" HorizontalOptions="Center" />
+      <Stepper x:Name="stepper" Minimum="0" Increment="1"  HorizontalOptions="Center" ValueChanged="OnStepperValueChanged" />
+      <Label  Text="Ejemplo Switch" FontSize="Medium" HorizontalOptions="Center" />
+      <Switch x:Name="switch"  HorizontalOptions="Center" Toggled="OnSwitchToggled"/>
+      <Label  Text="Ejemplo TableView (Recomendado)" FontSize="Medium" HorizontalOptions="Center" />
+      <TableView x:Name="TableView"  Intent="Settings">
+        <TableRoot>
+          <TableSection Title="Ring">
+            <SwitchCell Text="New Voice Mail" />
+            <SwitchCell Text="New Mail" On="true" />
+          </TableSection>
+          <TableSection Title="Configuración">
+            <SwitchCell Text="Enviar Correo" />
+            <SwitchCell Text="Internet" On="true" />
+          </TableSection>
+        </TableRoot>
+      </TableView>
+      <Label Text="Ejemplo TimePicker" FontSize="Medium" HorizontalOptions="Center" />
+      <TimePicker x:Name="TimePicker" PropertyChanged="OnTimePickerPropertyChanged"></TimePicker>
+      <Label Text="Ejemplo WebView" FontSize="Medium" HorizontalOptions="Center" />
+      <WebView x:Name="Browser"  Source="http://www.google.com"  />
+      
+    </StackLayout>
+   
+   
+  </ScrollView>
+</ContentPage>
