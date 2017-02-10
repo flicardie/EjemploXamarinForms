@@ -1,5 +1,5 @@
-# EjemploXamarinForms
-Ejemplo Xamarin Forms
+# Ejemplo de uso XamarinForms - Visual Studio
+
 
 Ejemplo básico para familiarizarse con Xamarin Forms, en el mismo podremos ver como usar los componentes principales de Xamarin para realizar
 interfaces de usuario.
