@@ -24,9 +24,10 @@ namespace EjemploXamarinForms
                 new HomePageViewModel(typeof(EjemploGridLayout), NavigateTo, BrowseSource),
                 new HomePageViewModel(typeof(EjemploViews), NavigateTo, BrowseSource),
                 new HomePageViewModel(typeof(EjemploAlertas), NavigateTo, BrowseSource),
-                new HomePageViewModel(typeof(EjemploSQLite), NavigateTo, BrowseSource)
+                new HomePageViewModel(typeof(EjemploSQLite), NavigateTo, BrowseSource),
+                new HomePageViewModel(typeof(EjemploTableView), NavigateTo, BrowseSource)
 
-              
+
             };
 
             listView.ItemsSource = models;

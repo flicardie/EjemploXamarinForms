@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploXamarinForms.EjemploTableView"
+             Title="Ejemplo de TableView"
+  >
+  
+    
+  <StackLayout>
+    <TableView x:Name="tableView" Intent="Form">
+      <TableRoot Title="Data Form">
+        <TableSection Title="Solicitud de Información">
+          <EntryCell Label="Name:"
+          Text="{Binding Name}"
+          Placeholder="Ingres su nombre"
+          Keyboard="Text" />
+
+          <EntryCell Label="Email:"
+          Text="{Binding EmailAddress}"
+          Placeholder="Ingrese su correo"
+          Keyboard="Email" />
+          <EntryCell Label="Phone:"
+          Text="{Binding PhoneNumber}"
+          Placeholder="Ingrese su número telefónico"
+          Keyboard="Telephone" />
+          <EntryCell Label="Age:"
+          Text="{Binding Age}"
+          Placeholder="Ingrese su edad"
+          Keyboard="Numeric" />
+          <SwitchCell Text="Es usted un programador?"
+          On="{Binding IsProgrammer}" />
+        </TableSection>
+      </TableRoot>
+    </TableView>
+
+   
+  </StackLayout>
+
+</ContentPage>

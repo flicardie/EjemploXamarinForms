@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace EjemploXamarinForms
 {
-    public partial class TableView : ContentPage
+    public partial class EjemploTableView : ContentPage
     {
-        public TableView()
+        public EjemploTableView()
         {
             InitializeComponent();
         }
