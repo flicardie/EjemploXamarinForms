@@ -9,6 +9,7 @@
   </ContentPage.Padding>
   <StackLayout>
     <Label Text="Ejemplo de un botón" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Button  Clicked="buttonOnClick" x:Name="btnEjemplo" Text="Ejemplo de Botón" HorizontalOptions="Center"  />
+    <Button  Clicked="buttonOnClick" x:Name="btnEjemplo" Text="Ejemplo de Botón" HorizontalOptions="Center" BackgroundColor="#3498DB" BorderRadius="0"
+			TextColor="White"  />
   </StackLayout>
 </ContentPage>
