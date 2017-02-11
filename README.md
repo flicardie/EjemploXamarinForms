@@ -14,4 +14,6 @@ Adicional a ello se muestra como utilizar SQLite para el manejo de bases de dato
 - BLL
 - DAL
 
-# Autor Fausto Licardié
+# Autor 
+
+###### Fausto Licardié
