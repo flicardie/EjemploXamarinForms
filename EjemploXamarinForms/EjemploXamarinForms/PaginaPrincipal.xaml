@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploXamarinForms.PaginaPrincipal"
+             Title ="Ejemplos Xamarin"
+             >
+  <StackLayout>
+    <TableView x:Name="listadoComponentes" Intent="Menu">
+      <TableRoot Title="Data Form">
+        <TableSection Title="Listado de Componentes">
+          <TextCell
+            Text="Pages"
+            Command="{Binding IraCommando}"
+            CommandParameter="ContenedorPages"
+          />
+          <TextCell
+            Text="Layouts"
+            Command="{Binding IraCommando}"
+            CommandParameter="ContenedorLayouts"
+          />
+          <TextCell
+            Text="Views"
+            Command="{Binding IraCommando}"
+            CommandParameter="ContenedorViews"
+          />
+          
+        
+        </TableSection>
+        <TableSection Title="Otros Ejemplos" >
+          <TextCell
+            Text="SQLite"
+            Command="{Binding IraCommando}"
+            CommandParameter="EjemploSQLite"
+          />
+          <TextCell
+            Text="Mensajes de Alertas"
+            Command="{Binding IraCommando}"
+            CommandParameter="EjemploAlertas"
+          />
+          
+
+        </TableSection>
+       
+      </TableRoot>
+    </TableView>
+
+
+  </StackLayout>
+</ContentPage>

@@ -3,7 +3,7 @@
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:MasterDetailPageNavigation;assembly=MasterDetailPageNavigation"
                   x:Class="EjemploXamarinForms.Pages.EjemploMasterDetailsPage"
-                  Title="Ejemplo de Master Detail Page"
+                  Title="Master Detail Page"
                   >
   <MasterDetailPage.Master>
     <ContentPage Title="Titulo" Icon="Hamburguer.png">

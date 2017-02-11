@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace EjemploXamarinForms
+namespace EjemploXamarinForms.Views
 {
-    public partial class EjemploAbsoluteLayout : ContentPage
+    public partial class TableViewIntentMenu : ContentPage
     {
-        public EjemploAbsoluteLayout()
+        public TableViewIntentMenu()
         {
             InitializeComponent();
         }

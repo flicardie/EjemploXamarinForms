@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace EjemploXamarinForms
+namespace EjemploXamarinForms.Views
 {
-    public partial class EjemploCarrouselPage : CarouselPage
+    public partial class TableViewIntentSettings : ContentPage
     {
-        public EjemploCarrouselPage()
+        public TableViewIntentSettings()
         {
             InitializeComponent();
         }

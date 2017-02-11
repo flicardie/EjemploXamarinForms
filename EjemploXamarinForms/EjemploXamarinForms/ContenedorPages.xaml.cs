@@ -1,34 +1,39 @@
-﻿using System;
+﻿using EjemploXamarinForms.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace EjemploXamarinForms
 {
-    public partial class MainPage : ContentPage
+    public partial class ContenedorPages : ContentPage
     {
-        public MainPage()
+
+      
+
+        public ContenedorPages()
         {
+           
+            ManejoEventosViewModel datos = new ManejoEventosViewModel(NavigateTo);
+            this.BindingContext = datos;
             InitializeComponent();
-
-            List<HomePageViewModel> models = new List<HomePageViewModel>
-            {
-              
-                new HomePageViewModel(typeof(EjemploAlertas), NavigateTo, BrowseSource),
-                new HomePageViewModel(typeof(EjemploSQLite), NavigateTo, BrowseSource)
-              
-               
-
-
-
-            };
-
-            listView.ItemsSource = models;
+         
+          
+            
         }
 
-        async void NavigateTo(Type pageType)
+        async void NavigateTo(String informacionDelTipo)
         {
+
+
+            //string hola = datos;
+            Type pageType = Utilidades.GetTypeByString(informacionDelTipo, this.GetType().GetTypeInfo().Assembly);
+            //EjemploGeneral.GetTypeByString(informacionDelTipo, this.GetType().GetTypeInfo().Assembly);
             // Get all the constructors of the page type.
             IEnumerable<ConstructorInfo> constructors =
                     pageType.GetTypeInfo().DeclaredConstructors;
@@ -46,6 +51,8 @@ namespace EjemploXamarinForms
             }
         }
 
+       
+
         async void BrowseSource(string pageName)
         {
             string espacioDeNombres = "EjemploXamarinForms.";
@@ -59,17 +66,6 @@ namespace EjemploXamarinForms
                     string xaml = reader.ReadToEnd();
                     await this.Navigation.PushAsync(new VisualizadorXaml(xaml));
                 }
-            }
-        }
-
-        // Also go to the page when the ListView item is selected.
-        void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs args)
-        {
-            HomePageViewModel viewModel = args.SelectedItem as HomePageViewModel;
-
-            if (viewModel != null)
-            {
-                viewModel.GoToCommand.Execute(viewModel.PageType);
             }
         }
     }

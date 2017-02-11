@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-x:Class="EjemploXamarinForms.EjemploStackLayout"
-Title="Ejemplo de StackLayout">
-  <ContentPage.Content>
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploXamarinForms.Layouts.StackLayout"
+             Title ="StackLayout"
+             >
+  
     <StackLayout Spacing="10" x:Name="layout">
       <Button Text="StackLayout" VerticalOptions="Start"
         HorizontalOptions="FillAndExpand" />
@@ -14,5 +15,5 @@ Title="Ejemplo de StackLayout">
       <BoxView HeightRequest="75" Color="Blue" VerticalOptions="End"
   HorizontalOptions="FillAndExpand" />
     </StackLayout>
-  </ContentPage.Content>
+ 
 </ContentPage>

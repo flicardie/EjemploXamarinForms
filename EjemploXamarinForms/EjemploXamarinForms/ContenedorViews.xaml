@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EjemploXamarinForms.EjemploGeneral"
+             x:Class="EjemploXamarinForms.ContenedorViews"
              
              Title="Ejemplo General"
              >
@@ -9,29 +9,7 @@
   <StackLayout>
     <TableView x:Name="listadoComponentes" Intent="Menu">
       <TableRoot Title="Data Form">
-        <TableSection Title="Listado de Páginas(Pages)">
-          <TextCell
-            Text="ContentPage"
-            Command="{Binding IraCommando}"
-            CommandParameter="EjemploContentPage"
-          />
-          <TextCell
-           Text="MasterDetailPage"
-           Command="{Binding IraCommando}"
-           CommandParameter="EjemploMasterDetailsPage"
-          />
-          <TextCell
-          Text="TabbedPage"
-          Command="{Binding IraCommando}"
-          CommandParameter="EjemploTabbedsPage"
-          />
-          <TextCell
-         Text="CarouselPage"
-         Command="{Binding IraCommando}"
-         CommandParameter="EjemploCarouselsPage"
-          />
-        </TableSection>
-        <TableSection Title="Listado de Componentes(Views)">
+         <TableSection Title="Listado de Componentes(Views)">
           <TextCell
             Text="Activity Indicator"
             Command="{Binding IraCommando}"
@@ -44,10 +22,10 @@
             CommandParameter="BoxView"
           />
           <TextCell 
-            Text="Botón"
-            x:Name="Boton"
+            Text="Button"
+            x:Name="Button"
             Command="{Binding IraCommando}"
-            CommandParameter="Boton"
+            CommandParameter="Button"
            />
           <TextCell
             Text="DatePicker"
@@ -116,17 +94,37 @@
            Command="{Binding IraCommando}"
            CommandParameter="Stepper"
            />
-          <TextCell
+         
+           <TextCell
            Text="Switch"
            x:Name="Switch"
            Command="{Binding IraCommando}"
            CommandParameter="Switch"
            />
-          <TextCell
-           Text="TimePicker"
-           x:Name="TimePicker"
+           
+           <TextCell
+           Text="TableView (Intent Form)"
+           x:Name="TableViewForm"
            Command="{Binding IraCommando}"
-           CommandParameter="TimePicker"
+           CommandParameter="TableViewIntentForm"
+           />
+           <TextCell
+           Text="TableView (Intent Menu)"
+           x:Name="TableViewMenu"
+           Command="{Binding IraCommando}"
+           CommandParameter="TableViewIntentMenu"
+           />
+           <TextCell
+          Text="TableView (Intent Settings)"
+          x:Name="TableViewSettings"
+          Command="{Binding IraCommando}"
+          CommandParameter="TableViewIntentSettings"
+           />
+           <TextCell
+          Text="TimePicker"
+          x:Name="TimePicker"
+          Command="{Binding IraCommando}"
+          CommandParameter="TimePicker"
            />
           <TextCell
            Text="WebView"

@@ -4,6 +4,9 @@
              x:Class="EjemploXamarinForms.Views.Stepper"
              Title="Stepper View"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+  </ContentPage.Padding>
   <StackLayout>
     <Label  Text="Ejemplo Stepper" FontSize="Medium" HorizontalOptions="Center" />
     <Stepper x:Name="stepper" Minimum="0" Increment="1"  HorizontalOptions="Center" ValueChanged="OnStepperValueChanged" />

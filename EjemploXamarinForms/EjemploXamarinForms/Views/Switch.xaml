@@ -4,6 +4,9 @@
              x:Class="EjemploXamarinForms.Views.Switch"
              Title="Switch View"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+  </ContentPage.Padding>
   <StackLayout>
     <Label  Text="Ejemplo Switch" FontSize="Medium" HorizontalOptions="Center" />
     <Switch x:Name="switch"  HorizontalOptions="Center" Toggled="OnSwitchToggled"/>

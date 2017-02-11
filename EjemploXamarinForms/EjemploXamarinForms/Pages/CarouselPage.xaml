@@ -2,7 +2,7 @@
 <CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               x:Class="EjemploXamarinForms.Pages.EjemploCarouselsPage"
-              Title="Ejemplo de Carrousel Page"
+              Title="Carousel Page"
               >
   <ContentPage>
     <ContentPage.Padding>
@@ -15,8 +15,10 @@
   </ContentPage>
   <ContentPage>
     <Label Text="Ejemplo de Página 2" VerticalOptions="Center" HorizontalOptions="Center" />
+    <BoxView Color="Blue" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
   </ContentPage>
   <ContentPage>
     <Label Text="Ejemplo de Página 3" VerticalOptions="Center" HorizontalOptions="Center" />
+    <BoxView Color="Yellow" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
   </ContentPage>
 </CarouselPage>

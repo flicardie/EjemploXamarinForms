@@ -4,6 +4,9 @@
              x:Class="EjemploXamarinForms.Views.Slider"
              Title="Slider View"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+  </ContentPage.Padding>
   <StackLayout>
     <Label  Text="Ejemplo Slider" FontSize="Medium" HorizontalOptions="Center" />
     <Slider x:Name="slider" Minimum="0" Maximum="5" Value="0" VerticalOptions="CenterAndExpand" ValueChanged="OnSliderValueChanged"/>

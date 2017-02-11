@@ -4,6 +4,9 @@
              x:Class="EjemploXamarinForms.Views.ActivityIndicator"
              Title ="Activity Indicator View"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+  </ContentPage.Padding>
   <StackLayout>
   <Label x:Name="etiqueta" Text="Ejemplo de ActivityIndicator" FontSize="Medium" HorizontalOptions="Center" />
   <ActivityIndicator x:Name="activityIndicator" IsVisible="True" IsRunning="True" Color="Black" />

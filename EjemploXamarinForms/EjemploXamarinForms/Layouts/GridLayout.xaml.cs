@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace EjemploXamarinForms
+namespace EjemploXamarinForms.Layouts
 {
-    public partial class EjemploRelativeLayout : ContentPage
+    public partial class GridLayout : ContentPage
     {
-        public EjemploRelativeLayout()
+        public GridLayout()
         {
             InitializeComponent();
         }

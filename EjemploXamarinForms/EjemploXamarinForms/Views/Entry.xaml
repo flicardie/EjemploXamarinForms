@@ -4,7 +4,10 @@
              x:Class="EjemploXamarinForms.Views.Entry"
              Title ="Entry View"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+  </ContentPage.Padding>
   <StackLayout>
-    <Entry x:Name="cajaDeTexto" Placeholder="Ingresa un texto" Completed="entryOnCompleted"/>
+    <Entry x:Name="cajaDeTexto" Placeholder="Ingresa un texto" Completed="entryOnCompleted" VerticalOptions="Center" HorizontalOptions="Center"/>
   </StackLayout>
 </ContentPage>

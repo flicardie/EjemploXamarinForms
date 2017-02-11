@@ -13,7 +13,7 @@ namespace EjemploXamarinForms
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new EjemploXamarinForms.MainPage());
+            MainPage = new NavigationPage(new EjemploXamarinForms.PaginaPrincipal());
 
 
         }

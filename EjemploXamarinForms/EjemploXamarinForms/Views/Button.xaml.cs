@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace EjemploXamarinForms.Views
 {
-    public partial class Boton : ContentPage
+    public partial class Button : ContentPage
     {
-        public Boton()
+        public Button()
         {
             InitializeComponent();
         }

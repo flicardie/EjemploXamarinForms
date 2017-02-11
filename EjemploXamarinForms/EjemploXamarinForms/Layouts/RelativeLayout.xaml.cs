@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace EjemploXamarinForms
+namespace EjemploXamarinForms.Layouts
 {
-    public partial class EjemploTabbedPage : TabbedPage
+    public partial class RelativeLayout : ContentPage
     {
-        public EjemploTabbedPage()
+        public RelativeLayout()
         {
             InitializeComponent();
         }

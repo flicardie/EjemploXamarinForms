@@ -4,12 +4,15 @@
              x:Class="EjemploXamarinForms.EjemploSQLite"
              Title="Ejemplo de SQLite"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" Android="20" />
+  </ContentPage.Padding>
   <StackLayout>
-    <Label Text="Ingrese su nombre" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Text="Ingrese su nombre" VerticalOptions="Center" HorizontalOptions="Start" />
     <Entry x:Name="nombre"></Entry>
-    <Label Text="Ingrese su dirección" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Text="Ingrese su dirección" VerticalOptions="Center" HorizontalOptions="Start" />
     <Entry x:Name="direccion"></Entry>
-    <Label Text="Ingrese su número telefónico" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Text="Ingrese su número telefónico" VerticalOptions="Center" HorizontalOptions="Start" />
     <Entry x:Name="telefono"></Entry>
     <Button x:Name ="btnAgregarEmpleado" Clicked="AgregarEmpleado" Text="Agregar Empleado" HorizontalOptions="Center"></Button>
     <Button Text="Mostrar Datos" Clicked="MostrarDatos"/>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploXamarinForms.ContenedorPages"
+             
+             Title="Ejemplo de Pages"
+             >
+  
+  <StackLayout>
+    <TableView x:Name="listadoComponentes" Intent="Menu">
+      <TableRoot Title="Data Form">
+        <TableSection Title="Listado de Páginas(Pages)">
+          <TextCell
+            Text="ContentPage"
+            Command="{Binding IraCommando}"
+            CommandParameter="EjemploContentPage"
+          />
+          <TextCell
+           Text="MasterDetailPage"
+           Command="{Binding IraCommando}"
+           CommandParameter="EjemploMasterDetailsPage"
+          />
+          <TextCell
+          Text="TabbedPage"
+          Command="{Binding IraCommando}"
+          CommandParameter="EjemploTabbedsPage"
+          />
+          <TextCell
+         Text="CarouselPage"
+         Command="{Binding IraCommando}"
+         CommandParameter="EjemploCarouselsPage"
+          />
+        </TableSection>
+  
+      </TableRoot>
+    </TableView>
+
+
+  </StackLayout>
+
+</ContentPage>

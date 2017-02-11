@@ -4,6 +4,9 @@
              x:Class="EjemploXamarinForms.Views.Label"
              Title="Label View"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+  </ContentPage.Padding>
   <StackLayout>
    <Label Text="Esta es una etiqueta" VerticalOptions="Center" HorizontalOptions="Center" />
   </StackLayout>

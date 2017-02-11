@@ -4,6 +4,9 @@
              x:Class="EjemploXamarinForms.Views.PickerEjemplo"
              Title="Picker View"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+  </ContentPage.Padding>
   <StackLayout>
     <Picker x:Name="picker" Title="Seleccione un mono" HorizontalOptions="Center" SelectedIndexChanged="OnPickerSelectedIndexChanged">
       <Picker.Items>

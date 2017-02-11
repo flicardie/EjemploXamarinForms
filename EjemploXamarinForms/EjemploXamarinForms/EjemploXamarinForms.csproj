@@ -38,40 +38,34 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EjemploAbsoluteLayout.xaml.cs">
-      <DependentUpon>EjemploAbsoluteLayout.xaml</DependentUpon>
+    <Compile Include="ContenedorPages.xaml.cs">
+      <DependentUpon>ContenedorPages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContenedorLayouts.xaml.cs">
+      <DependentUpon>ContenedorLayouts.xaml</DependentUpon>
     </Compile>
     <Compile Include="EjemploAlertas.xaml.cs">
       <DependentUpon>EjemploAlertas.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EjemploCarrouselPage.xaml.cs">
-      <DependentUpon>EjemploCarrouselPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EjemploGridLayout.xaml.cs">
-      <DependentUpon>EjemploGridLayout.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EjemploMasterDetailPage.xaml.cs">
-      <DependentUpon>EjemploMasterDetailPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EjemploPages.xaml.cs">
-      <DependentUpon>EjemploPages.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EjemploRelativeLayout.xaml.cs">
-      <DependentUpon>EjemploRelativeLayout.xaml</DependentUpon>
+    <Compile Include="ContenedorViews.xaml.cs">
+      <DependentUpon>ContenedorViews.xaml</DependentUpon>
     </Compile>
     <Compile Include="EjemploSQLite.xaml.cs">
       <DependentUpon>EjemploSQLite.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EjemploStackLayout.xaml.cs">
-      <DependentUpon>EjemploStackLayout.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EjemploTabbedPage.xaml.cs">
-      <DependentUpon>EjemploTabbedPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EjemploViews.xaml.cs">
-      <DependentUpon>EjemploViews.xaml</DependentUpon>
-    </Compile>
     <Compile Include="HomePageViewModel.cs" />
+    <Compile Include="Layouts\AbsoluteLayout.xaml.cs">
+      <DependentUpon>AbsoluteLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\GridLayout.xaml.cs">
+      <DependentUpon>GridLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\RelativeLayout.xaml.cs">
+      <DependentUpon>RelativeLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\StackLayout.xaml.cs">
+      <DependentUpon>StackLayout.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListaDeEmpleados.xaml.cs">
       <DependentUpon>ListaDeEmpleados.xaml</DependentUpon>
     </Compile>
@@ -90,18 +84,17 @@
     <Compile Include="Pages\TabbedPage.xaml.cs">
       <DependentUpon>TabbedPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="EjemploTableView.xaml.cs">
-      <DependentUpon>EjemploTableView.xaml</DependentUpon>
+    <Compile Include="PaginaPrincipal.xaml.cs">
+      <DependentUpon>PaginaPrincipal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilidades.cs" />
+    <Compile Include="ViewModel\ManejoEventosViewModel.cs" />
     <Compile Include="Views\ActivityIndicator.xaml.cs">
       <DependentUpon>ActivityIndicator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Boton.xaml.cs">
-      <DependentUpon>Boton.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EjemploGeneral.xaml.cs">
-      <DependentUpon>EjemploGeneral.xaml</DependentUpon>
+    <Compile Include="Views\Button.xaml.cs">
+      <DependentUpon>Button.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BoxView.xaml.cs">
       <DependentUpon>BoxView.xaml</DependentUpon>
@@ -141,6 +134,15 @@
     </Compile>
     <Compile Include="Views\Switch.xaml.cs">
       <DependentUpon>Switch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TableViewIntentForm.xaml.cs">
+      <DependentUpon>TableViewIntentForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TableViewIntentSettings.xaml.cs">
+      <DependentUpon>TableViewIntentSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TableViewIntentMenu.xaml.cs">
+      <DependentUpon>TableViewIntentMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TimePicker.xaml.cs">
       <DependentUpon>TimePicker.xaml</DependentUpon>
@@ -197,12 +199,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EjemploPages.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Pages\CarouselPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -210,54 +206,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="VisualizadorXaml.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploMasterDetailPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploTabbedPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploCarrouselPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploStackLayout.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploAbsoluteLayout.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploRelativeLayout.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploGridLayout.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploViews.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -295,19 +243,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EjemploTableView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\Boton.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EjemploGeneral.xaml">
+    <EmbeddedResource Include="Views\Button.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -422,6 +358,72 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\TabbedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PaginaPrincipal.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContenedorViews.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContenedorPages.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContenedorLayouts.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layouts\AbsoluteLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layouts\GridLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layouts\RelativeLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layouts\StackLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TableViewIntentMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TableViewIntentForm.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TableViewIntentSettings.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

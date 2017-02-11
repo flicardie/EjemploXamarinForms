@@ -4,6 +4,9 @@
              x:Class="EjemploXamarinForms.Views.SearchBar"
              Title="SearchBar View"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+  </ContentPage.Padding>
   <StackLayout>
     <Label Text="Ejemplo Search Bar" FontSize="Medium" HorizontalOptions="Center"  />
     <SearchBar x:Name="search" Placeholder="Buscar" TextChanged="searchTextChanged" SearchButtonPressed="searchButtonPressed" />
