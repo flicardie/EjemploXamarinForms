@@ -14,5 +14,5 @@
   <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
   </ContentPage.Padding>
-  <Label Text="Este es un content Page con un ícono arriba" VerticalOptions="Center" HorizontalOptions="Center" />
+  <Label Text="Este es un content Page con un toolbar arriba" VerticalOptions="Center" HorizontalOptions="Center" />
 </ContentPage>
