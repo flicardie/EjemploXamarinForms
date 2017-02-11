@@ -16,6 +16,12 @@
             CommandParameter="EjemploContentPage"
           />
           <TextCell
+           Text="ContentPage (Toolbar)"
+           Command="{Binding IraCommando}"
+           CommandParameter="ContentPageWithToolbar"
+          />
+          
+          <TextCell
            Text="MasterDetailPage"
            Command="{Binding IraCommando}"
            CommandParameter="EjemploMasterDetailsPage"

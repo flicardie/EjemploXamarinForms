@@ -75,6 +75,9 @@
     <Compile Include="Pages\CarouselPage.xaml.cs">
       <DependentUpon>CarouselPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ContentPageWithToolbar.xaml.cs">
+      <DependentUpon>ContentPageWithToolbar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ContentPage.xaml.cs">
       <DependentUpon>ContentPage.xaml</DependentUpon>
     </Compile>
@@ -424,6 +427,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\TableViewIntentSettings.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ContentPageWithToolbar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
