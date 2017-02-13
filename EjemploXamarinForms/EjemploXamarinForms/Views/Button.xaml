@@ -12,4 +12,5 @@
     <Button  Clicked="buttonOnClick" x:Name="btnEjemplo" Text="Ejemplo de Botón" HorizontalOptions="Center" BackgroundColor="#3498DB" BorderRadius="0"
 			TextColor="White"  />
   </StackLayout>
+
 </ContentPage>
